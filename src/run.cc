@@ -7,9 +7,10 @@ int main(int argc, char **argv)
 {
 	TGAImage image(100, 100, TGAImage::RGB);
 
-  tuhi::Line(0, 0, 10, 10, image, white);
+	tuhi::Line(0, 0, 10, 10, image, white);
 
-	image.flip_vertically(); // i want to have the origin at the left bottom corner of the image
+	// i want to have the origin at the left bottom corner of the image
+	image.flip_vertically();
 	image.write_tga_file("output.tga");
 	return 0;
 }
