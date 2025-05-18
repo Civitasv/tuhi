@@ -6,7 +6,8 @@
             "cacheVariables": {
                 "CMAKE_EXPORT_COMPILE_COMMANDS": true,
                 "CMAKE_BUILD_TYPE": "Debug",
-                "VCPKG_INSTALLED_DIR": "${sourceDir}/vendor/vcpkg_installed"
+                "VCPKG_INSTALLED_DIR": "${sourceDir}/vendor/vcpkg_installed",
+				"VCPKG_MANIFEST_INSTALL": "OFF"
             },
             "toolchainFile": "./vendor/vcpkg/scripts/buildsystems/vcpkg.cmake",
             "binaryDir": "out/build"
@@ -34,7 +35,8 @@
         },
         {
             "name": "Release",
-            "configurePreset": "Release"
+            "configurePreset": "Release",
+            "targets": ""
         }
     ]
 }
